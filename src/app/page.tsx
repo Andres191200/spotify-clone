@@ -1,4 +1,4 @@
-import Navbar from './components/navbar';
+import Navbar from './components/navbar/navbar';
 import styles from './styles.module.scss';
 
 export default function Home() {

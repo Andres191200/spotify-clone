@@ -2,6 +2,7 @@
 	--background-color: #000;
 	--background-layer-1: #1F1F1F;
 	--font-primary: #f0f0f0;
+	--font-secondary: #b9b8b8;
 
 	--padding-mini: .5rem;
 	--padding-sm: 1rem;
@@ -51,4 +52,9 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+a {
+	color: var(--font-secondary);
+	text-decoration: none;
+	
 }
