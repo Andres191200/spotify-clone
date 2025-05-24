@@ -1,0 +1,4 @@
+@mixin flexSmGap{
+	display: flex;
+    gap: var(--padding-sm);
+}

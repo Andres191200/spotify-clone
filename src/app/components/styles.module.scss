@@ -1,0 +1,24 @@
+@use '../mixins.scss';
+
+.navbarComponent{
+    @include mixins.flexSmGap;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: var(--padding-sm);
+}
+
+.brandLogo{
+    fill: white;
+}
+
+.rightSideSection, .leftSideSection{
+    @include mixins.flexSmGap;
+    align-items: center;
+}
+
+.roundedButtonContainer{
+    display: inline-flex;
+    background-color: var(--background-layer-1);
+    padding: var(--padding-sm);
+    border-radius: 200px;
+}
