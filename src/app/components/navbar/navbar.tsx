@@ -1,11 +1,13 @@
 import Link from "next/link";
 import styles from "./styles.module.scss";
 import Image from "next/image";
+import WidthSeparator from "../separators/widthseparator";
+import HeightSeparator from "../separators/heightseparator";
 
 export default function Navbar() {
   return (
     <div className={styles.navbarComponent}>
-      <div className={styles.rightSideSection}>
+      <div className={styles.leftSideSection}>
         <svg
           className={styles.brandLogo}
           role="img"
@@ -33,7 +35,21 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <h1>hola</h1>
+      <section className={styles.rightSideSection}>
+        <div className={styles.linksContainer}>
+          <Link href={"/"}>Premium</Link>
+          <Link href={"/"}>Ayuda</Link>
+          <Link href={"/"}>Descargar</Link>
+        </div>
+        <WidthSeparator spacing="mini" />
+        <HeightSeparator />
+        <WidthSeparator spacing="mini" />
+
+        <Link href={"/"}>Instalar aplicación</Link>
+        <Link href={"/"}>Registrate</Link>
+
+        <button type="button" className={styles.primaryButton}>Iniciar sesión</button>
+      </section>
     </div>
   );
 }
