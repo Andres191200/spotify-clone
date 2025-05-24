@@ -1,56 +1,93 @@
-@use '../../mixins.scss';
+@use "../../mixins.scss";
 
-@mixin increaseSizeHover{
-    font-weight: 800;
-        transition: transform 100ms ease-out;
-        &:hover{
-            transform: scale(1.1);
-            transform-origin: bottom;
-        }
+@mixin increaseSizeHover {
+  font-weight: 800;
+  transition: transform 100ms ease-out;
+  &:hover {
+    transform: scale(1.1);
+    transform-origin: bottom;
+  }
 }
 
-.navbarComponent{
-    @include mixins.flexSmGap;
-    justify-content: space-between;
-    align-items: center;
-    padding-block: var(--padding-sm);
+.navbarComponent {
+  @include mixins.flexSmGap;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: var(--padding-sm);
 
-    a{
-        @include increaseSizeHover();
+  a {
+    @include increaseSizeHover();
 
-        &:hover{
-            color:var(--font-primary)
-        }
+    &:hover {
+      color: var(--font-primary);
     }
+  }
 
-    button {
-        @include increaseSizeHover();
-    }
+  button {
+    @include increaseSizeHover();
+  }
 }
 
-.brandLogo{
-    fill: white;
+.brandLogo {
+  fill: white;
 }
 
-.rightSideSection, .leftSideSection{
-    @include mixins.flexSmGap;
-    align-items: center;
+.leftSideSection,
+.middleSection,
+.rightSideSection {
+  @include mixins.flexSmGap;
+  align-items: center;
 }
 
-.roundedButtonContainer{
-    display: inline-flex;
+.middleSection {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.roundedButtonContainer {
+  display: inline-flex;
+  background-color: var(--background-layer-1);
+  padding: var(--padding-sm);
+  border-radius: 200px;
+}
+
+.linksContainer {
+  @include mixins.flexSmGap;
+}
+
+.primaryButton {
+  padding: var(--padding-sm) var(--padding-md);
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.searchBarContainer {
+  position: relative;
+  .searchBar {
     background-color: var(--background-layer-1);
-    padding: var(--padding-sm);
-    border-radius: 200px;
-}
-
-.linksContainer{
-    @include mixins.flexSmGap;
-}
-
-.primaryButton{
-    padding: var(--padding-sm) var(--padding-md);
-    border-radius: 2rem;
+    border-radius: 1rem;
+    border: none;
+    padding-block: var(--padding-sm);
+    padding-left: 2.5rem;
+    color: var(--font-primary);
     font-size: 1rem;
-    cursor:pointer;
+    width: 25rem;
+    transition: box-shadow 250ms ease-out;
+    box-shadow: none;
+
+    &:focus {
+      border: none;
+      outline: none;
+      box-shadow: inset 0 0 0 2px var(--font-primary);
+    }
+
+    & + img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: var(--padding-mini);
+    }
+  }
 }
