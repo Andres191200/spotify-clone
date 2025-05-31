@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import Image from "next/image";
 import WidthSeparator from "../separators/widthseparator";
 import HeightSeparator from "../separators/heightseparator";
+import SearchBar from "../search-bar/search_bar";
 
 export default function Navbar() {
   return (
@@ -34,21 +35,23 @@ export default function Navbar() {
           </div>
         </Link>
       </div>
-
+      <section className={styles.middleSection}>
+        <SearchBar />
+      </section>
       <section className={styles.rightSideSection}>
         <div className={styles.linksContainer}>
           <Link href={"/"}>Premium</Link>
-          <Link href={"/"}>Ayuda</Link>
-          <Link href={"/"}>Descargar</Link>
+          <Link href={"/"}>Support</Link>
+          <Link href={"/"}>Download</Link>
         </div>
         <WidthSeparator spacing="mini" />
         <HeightSeparator />
         <WidthSeparator spacing="mini" />
 
-        <Link href={"/"}>Instalar aplicación</Link>
-        <Link href={"/"}>Registrate</Link>
+        <Link href={"/"}>Install app</Link>
+        <Link href={"/"}>Sign up</Link>
 
-        <button type="button" className={styles.primaryButton}>Iniciar sesión</button>
+        <button type="button" className={styles.primaryButton}>Log in</button>
       </section>
     </div>
   );

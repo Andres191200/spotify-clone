@@ -1,0 +1,21 @@
+.searchBarComponent {
+  width: 400px;
+  height: 100%;
+
+  input {
+    height: 100%;
+    width: 100%;
+    padding-inline: var(--padding-sm);
+    background-color: var(--background-layer-1);
+    border-radius: 100rem;
+    border: none;
+    transition: box-shadow 250ms ease;
+
+    &:active,
+    &:focus {
+      border: none;
+      outline: none;
+      box-shadow: inset 0 0 0 2px var(--font-primary);
+    }
+  }
+}
