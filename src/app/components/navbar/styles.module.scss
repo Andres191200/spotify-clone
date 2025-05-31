@@ -12,7 +12,7 @@
 .navbarComponent{
     @include mixins.flexSmGap;
     justify-content: space-between;
-    padding-block: var(--padding-sm);
+    padding-block: var(--padding-mini);
 
     a{
         @include increaseSizeHover();
