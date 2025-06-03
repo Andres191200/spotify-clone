@@ -9,3 +9,23 @@
         color: var(--font-primary);
     }
 }
+
+.mainContainer{
+    display: flex;
+    gap:var(--padding-sm);
+    width: 100%;
+    height: calc(100% - var(--navbar-height));
+}
+
+.leftSectionContainer, .rightSectionContainer{
+    border-radius: 1rem;
+    background-color: var(--background-layer-2);
+}
+
+.leftSectionContainer{
+    flex: 1;
+}
+
+.rightSectionContainer{
+    flex: 3;
+}

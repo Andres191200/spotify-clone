@@ -12,7 +12,9 @@
 .navbarComponent{
     @include mixins.flexSmGap;
     justify-content: space-between;
-    padding-block: var(--padding-mini);
+    display: flex;
+    align-items: center;
+    height: var(--navbar-height);
 
     a{
         @include increaseSizeHover();
@@ -29,6 +31,10 @@
 
 .brandLogo{
     fill: white;
+}
+
+.leftSideSection{
+    width: 400px;
 }
 
 .rightSideSection, .leftSideSection{
