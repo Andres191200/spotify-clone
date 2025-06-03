@@ -31,6 +31,10 @@
     fill: white;
 }
 
+.leftSideSection{
+    width: 400px;
+}
+
 .rightSideSection, .leftSideSection{
     @include mixins.flexSmGap;
     align-items: center;

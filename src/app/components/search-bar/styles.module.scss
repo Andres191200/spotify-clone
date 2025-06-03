@@ -4,7 +4,7 @@
 
   input {
     height: 100%;
-    width: 100%;
+    width: clamp(200px, 20vw, 450px);
     padding-inline: var(--padding-sm);
     background-color: var(--background-layer-1);
     border-radius: 100rem;
