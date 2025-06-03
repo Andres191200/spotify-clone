@@ -5,7 +5,14 @@ export default function Home() {
   return (
     <main className={styles.homeMainContainer}>
       <Navbar />
-      <h1>SPOTIFY DESKTOP HOME with tanstack</h1>
+      <div className={styles.mainContainer}>
+        <div className={styles.leftSectionContainer}>
+
+        </div>
+        <div className={styles.rightSectionContainer}>
+          
+        </div>
+      </div>
     </main>
   );
 }
