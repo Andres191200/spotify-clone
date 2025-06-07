@@ -13,13 +13,13 @@ export default function LeftSection() {
       <div className={styles.sectionBody}>
         <FeatureBox
           buttonLabel="Create playlist"
-          subtitle="It is easy, we will help you"
+          subtitle="It's easy, we'll help you"
           title="Create your first playlist"
         />
         <FeatureBox
-          buttonLabel="Create playlist"
-          subtitle="It is easy, we will help you"
-          title="Create your first playlist"
+          buttonLabel="Browse podcasts"
+          subtitle="we'll keep you updated on new episodes"
+          title="Let's find some podcast to follow"
         />
       </div>
     </div>
