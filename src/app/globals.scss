@@ -11,6 +11,8 @@
 	--padding-sm: 1rem;
 	--padding-md: 2rem;
 	--padding-lg: 3rem;
+
+	--icon-black-to-primary: brightness(0) saturate(100%) invert(100%) sepia(29%) saturate(174%) hue-rotate(234deg) brightness(115%) contrast(88%);
 }
 
 html, body, div, span, applet, object, iframe,
@@ -65,4 +67,27 @@ a {
 	color: var(--font-secondary);
 	text-decoration: none;
 	
+}
+
+p[class="subtitle"]{
+	color: var(--font-secondary);
+}
+
+:where(h1,h2,h3,h4,h5,a,p){
+	color:var(--font-primary);
+}
+
+h1{
+	font-size: clamp(1rem, 10vw, 2.2rem);
+}
+
+h2{
+	font-size: clamp(1rem, 5vw, 1.75rem);
+}
+
+h3{
+	font-size: clamp(1rem, 5vw, 1.55rem);
+}
+h4{
+	font-size: clamp(1rem, 5vw, 1.3rem);
 }

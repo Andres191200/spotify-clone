@@ -1,0 +1,23 @@
+@use '../../mixins.scss';
+
+.featureBoxComponent{
+    @include mixins.flexSmGap;
+    width: 100%;
+    padding: var(--padding-sm);
+    background-color: var(--background-layer-1);
+    flex-direction: column;
+    border-radius: .5rem;
+    box-sizing: border-box;
+
+    button{
+        margin-top:var(--padding-sm);
+        display: inline-flex;
+        width: max-content;
+        background-color: var(--font-primary);
+        border: none;
+        outline: none;
+        padding: var(--padding-sm) var(--padding-md);
+        font-weight: 600;
+        border-radius: 10rem;
+    }
+}
