@@ -4,6 +4,8 @@
     padding: var(--padding-md) var(--padding-sm);
     display: flex;
     flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
     gap:var(--padding-lg);
     
     h4{
@@ -22,6 +24,13 @@
     .sectionBody{
         @include mixins.flexSmGap;
         flex-direction: column;
+    }
+
+    .sectionFooter{
+        margin-top: auto;
+        @include mixins.flexSmGap;
+        flex-wrap: wrap;
+        gap:1.5rem;
     }
 
 }
