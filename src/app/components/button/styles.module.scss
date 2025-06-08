@@ -1,0 +1,21 @@
+.buttonComponent {
+  button {
+    display: inline-flex;
+    width: max-content;
+    padding: var(--padding-sm) var(--padding-md);
+    font-weight: 600;
+    border-radius: 10rem;
+    outline: none;
+  }
+}
+
+      .secondaryButton {
+      background-color: transparent;
+      border: 1px solid var(--font-primary);
+      color: var(--font-primary);
+    }
+
+    .primaryButton {
+      border: none;
+      background-color: var(--font-primary);
+    }
