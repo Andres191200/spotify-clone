@@ -1,3 +1,13 @@
 .rowTileComponent{
-    
+
+}
+
+.rowTileElementComponent{
+    padding:var(--padding-sm);
+    .thumbnail{
+        margin-block: var(--padding-sm);
+        background-color: var(--background-layer-2);
+        height: 180px;
+        aspect-ratio: 1/1;
+    }
 }
