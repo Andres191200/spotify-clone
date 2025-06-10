@@ -1,5 +1,6 @@
 import LeftSection from './components/left-section/LeftSection';
 import Navbar from './components/navbar/navbar';
+import RightSection from './components/right-section/RIghtSection';
 import styles from './styles.module.scss';
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
           <LeftSection />
         </div>
         <div className={styles.rightSectionContainer}>
+          <RightSection />
         </div>
       </div>
     </main>
