@@ -1,13 +1,12 @@
-.rowTileComponent{
+@use '../../mixins.scss';
 
+.rowTileComponent{
+    @include mixins.flexSmGap;
+    flex-direction: column;
+    gap:0;
 }
 
-.rowTileElementComponent{
-    padding:var(--padding-sm);
-    .thumbnail{
-        margin-block: var(--padding-sm);
-        background-color: var(--background-layer-2);
-        height: 180px;
-        aspect-ratio: 1/1;
-    }
+.rowTile{
+    @include mixins.flexSmGap;
+    gap: var(--padding-md);
 }
