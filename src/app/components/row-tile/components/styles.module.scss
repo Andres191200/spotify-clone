@@ -1,0 +1,16 @@
+.thumbnail.square{
+    border-radius: .75rem;
+}
+
+.thumbnail.circular{
+    border-radius: 50rem;
+}
+
+.rowTileElementComponent{
+    .thumbnail{
+        margin-block: var(--padding-sm);
+        background-color: var(--background-layer-2);
+        height: 180px;
+        aspect-ratio: 1/1;
+    }
+}
