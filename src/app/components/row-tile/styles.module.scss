@@ -4,9 +4,14 @@
     @include mixins.flexSmGap;
     flex-direction: column;
     gap:0;
+    display: flex;
+    width: 100%;
 }
 
 .rowTile{
+    width: 100%;
     @include mixins.flexSmGap;
+    overflow-x: auto;
+    overflow-y: hidden;
     gap: var(--padding-md);
 }

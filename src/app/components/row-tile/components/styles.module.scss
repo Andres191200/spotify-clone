@@ -7,10 +7,24 @@
 }
 
 .rowTileElementComponent{
+    --row-element-size: 180px;
     .thumbnail{
         margin-block: var(--padding-sm);
-        background-color: var(--background-layer-2);
-        height: 180px;
+        // background-color: var(--background-layer-2);
+        background-color: green;
+        height: var(--row-element-size);
         aspect-ratio: 1/1;
     }
+}
+
+.title{
+    font-weight: 600;
+    line-height: 135%;
+    padding-bottom: var(--padding-sm);
+    width: var(--row-element-size);
+    font-size: 1.1rem;
+}
+
+.subtitle{
+    color:var(--font-secondary);
 }

@@ -12,8 +12,8 @@ export default function RowTileElement({element, elementsShape} : RowTileElement
   return (
     <div className={styles.rowTileElementComponent}>
         <div className={`${styles.thumbnail} ${elementsShape === EElementsShape.circular ? styles.circular : styles.square}`}></div>
-        <h5>{element.title}</h5>
-        <h5>{element.subtitle}</h5>
+        <h5 className={styles.title}>{element.title}</h5>
+        <h5 className={styles.subtitle}>{element.subtitle}</h5>
     </div>
   )
 }
