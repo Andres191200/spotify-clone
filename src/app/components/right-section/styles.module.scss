@@ -1,9 +1,21 @@
+@use '../../mixins.scss';
+
 .rightSectionComponent{
     background: #222222;
+    display: inline-flex;
+    width: 100%;
     background: linear-gradient(180deg,rgba(34, 34, 34, 1) 0%, rgba(18, 18, 18, 1) 50%);
+    min-width: 0;
     border-radius: 1rem;
     height: 100%;
     padding: var(--padding-md) var(--padding-lg);
     box-sizing: border-box;
     color: var(--font-primary);
+}
+
+.rightSectionContentRows{
+    @include mixins.flexSmGap;
+    width: 100%;
+    flex-direction: column;
+    gap: calc(var(--padding-lg)*2);
 }
