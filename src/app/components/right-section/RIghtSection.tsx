@@ -34,6 +34,16 @@ export default function RightSection() {
           elements={artists}
           elementsShape={EElementsShape.circular}
         />
+                <RowTile
+          title="Popular albums and singles"
+          elements={artists}
+          elementsShape={EElementsShape.square}
+        />
+                <RowTile
+          title="Popular radio"
+          elements={artists}
+          elementsShape={EElementsShape.square}
+        />
       </div>
     </div>
   );
