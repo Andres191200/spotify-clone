@@ -83,13 +83,17 @@ h1{
 }
 
 h2{
-	font-size: clamp(1rem, 5vw, 1.75rem);
+	font-size: clamp(1rem, 5vw, 1.65rem);
 	font-weight: 600;
 }
 
 h3{
-	font-size: clamp(1rem, 5vw, 1.55rem);
+	font-size: clamp(1rem, 5vw, 1.45rem);
 }
 h4{
-	font-size: clamp(1rem, 5vw, 1.3rem);
+	font-size: clamp(1rem, 5vw, 1.2rem);
+}
+
+h5{
+	font-size: clamp(1rem, 5vw, 1rem);
 }
