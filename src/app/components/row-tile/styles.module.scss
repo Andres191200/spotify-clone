@@ -14,8 +14,21 @@
     overflow-x: auto;
     overflow-y: hidden;
     gap: var(--padding-md);
+    position: relative;
 
     &::-webkit-scrollbar{
         display: none;
+    }
+
+    button{
+        position:absolute;
+
+        &.prevButton{
+            left: 0;
+        }
+
+        &.nextButton{
+            right: 0;
+        }
     }
 }
