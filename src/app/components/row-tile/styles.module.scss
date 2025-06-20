@@ -6,29 +6,47 @@
     gap:0;
     display: flex;
     width: 100%;
+    position:relative;
 }
 
 .rowTile{
-    width: 100%;
     @include mixins.flexSmGap;
+    width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
     gap: var(--padding-md);
-    position: relative;
 
-    &::-webkit-scrollbar{
-        display: none;
+    &:hover > button{
+        opacity: 1;
+        pointer-events: all;
     }
 
     button{
-        position:absolute;
+        background-color: var(--background-layer-1);
+        border-radius: 10rem;
+        transition: opacity 200ms ease-out;
+        padding: var(--padding-mini);
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        pointer-events: none;
+        cursor:pointer;
+
+        &:hover{
+            filter:brightness(1.5)
+        }
 
         &.prevButton{
             left: 0;
         }
-
+        
         &.nextButton{
             right: 0;
         }
+
+
     }
 }

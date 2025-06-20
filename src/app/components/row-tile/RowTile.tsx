@@ -1,11 +1,12 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import styles from "./styles.module.scss";
 import { Tile } from "./tile";
 import RowTileElement from "./components/RowTileElement";
 import { EElementsShape } from "./models/element_shape";
+import Image from "next/image";
 
-const XPosFactor:number = 100 as const;
+const XPosFactor:number = 200 as const;
 
 interface rowTileProps {
   title: string;
@@ -26,7 +27,6 @@ export default function RowTile({
   elements,
   elementsShape,
 }: rowTileProps) {
-  const [XPos, setXPos] = useState<number>(0);
   const rowTileRef = useRef<HTMLDivElement | null>(null);
   
   return (
@@ -38,14 +38,15 @@ export default function RowTile({
           type="button"
           onClick={() => slideBackwards(rowTileRef)}
         >
-          previous
+          <Image src={'/left-arrow.svg'} height={30} width={30} alt="arrow icon"/>
+          
         </button>
         <button
           className={styles.nextButton}
           type="button"
           onClick={() => slideForwards(rowTileRef)}
         >
-          next
+          <Image src={'/right-arrow.svg'} height={30} width={30} alt="arrow icon"/>
         </button>
         {elements.map((element, index) => (
           <RowTileElement
