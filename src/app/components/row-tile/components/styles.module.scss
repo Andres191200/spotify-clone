@@ -6,6 +6,13 @@
     border-radius: 50rem;
 }
 
+.thumbnail{
+    overflow: hidden;
+    img{
+        object-fit: cover;
+    }
+}
+
 .rowTileElementComponent{
     --row-element-size: 180px;
     .thumbnail{
