@@ -1,11 +1,12 @@
 .searchBarComponent {
   width: 400px;
   height: 100%;
+  position:relative;
 
   input {
     height: 45px;
     width: clamp(200px, 20vw, 450px);
-    padding-inline: var(--padding-sm);
+    padding-inline: var(--padding-lg);
     background-color: var(--background-layer-1);
     border-radius: 100rem;
     color:var(--font-primary);
@@ -23,5 +24,13 @@
       outline: none;
       box-shadow: inset 0 0 0 2px var(--font-primary);
     }
+  }
+
+  img{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: var(--padding-mini);
+    filter:var(--icon-black-to-primary);
   }
 }
