@@ -6,26 +6,28 @@ import { EElementsShape } from "../row-tile/models/element_shape";
 
 export default function RightSection() {
   const trending: Tile[] = [
-    { thumbnailPath: "/thriller_album.jpg", subtitle: "Michael Jackson", title: "Thriller" },
-    { thumbnailPath: "/guns_roses.webp", subtitle: "Guns n roses", title: "Welcome to the jungle" },
-    { thumbnailPath: "/sabrina_carpenter.webp", subtitle: "Sabrina Carpenter", title: "Manchild" },
-    { thumbnailPath: "/tw_o_pts.webp", subtitle: "Twenty One Pilots", title: "The Contract" },
-    { thumbnailPath: "/beach_boys.jpg", subtitle: "The Beach Boys", title: "God only knows" },
-    { thumbnailPath: "/sabrina_carpenter.webp", subtitle: "Sabrina Carpenter", title: "Manchild" },
-    { thumbnailPath: "/tw_o_pts.webp", subtitle: "Twenty One Pilots", title: "The Contract" },
-    { thumbnailPath: "/beach_boys.jpg", subtitle: "The Beach Boys", title: "God only knows" },
+    { thumbnailPath: "/albums/thriller_album.jpg", subtitle: "Michael Jackson", title: "Thriller" },
+    { thumbnailPath: "/albums/guns_roses.webp", subtitle: "Guns n roses", title: "Welcome to the jungle" },
+    { thumbnailPath: "/albums/sabrina_carpenter.webp", subtitle: "Sabrina Carpenter", title: "Manchild" },
+    { thumbnailPath: "/albums/tw_o_pts.webp", subtitle: "Twenty One Pilots", title: "The Contract" },
+    { thumbnailPath: "/albums/beach_boys.jpg", subtitle: "The Beach Boys", title: "God only knows" },
+    { thumbnailPath: "/albums/sabrina_carpenter.webp", subtitle: "Sabrina Carpenter", title: "Manchild" },
+    { thumbnailPath: "/albums/tw_o_pts.webp", subtitle: "Twenty One Pilots", title: "The Contract" },
+    { thumbnailPath: "/albums/beach_boys.jpg", subtitle: "The Beach Boys", title: "God only knows" },
   ];
 
   const artists: Tile[] = [
-    { thumbnailPath: "/bad_bunny.jpeg", subtitle: "Artist", title: "Bad bunny" },
-    { thumbnailPath: "/karol_g.jpg", subtitle: "Artist", title: "Karol G" },
-    { thumbnailPath: "/rauw.jpeg", subtitle: "Artist", title: "Rauw Alejandro" },
-    { thumbnailPath: "/harry.jpeg", subtitle: "Artist", title: "Zayn Malik" },
-    { thumbnailPath: "/daddy.jpg", subtitle: "Artist", title: "Daddy Yankee" },
-    { thumbnailPath: "/jennifer.jpeg", subtitle: "Artist", title: "Jennifer Lopez" },
-    { thumbnailPath: "/george_michael.jpg", subtitle: "Artist", title: "George Michael" },
-    { thumbnailPath: "/sam_smith.jpeg", subtitle: "Artist", title: "Sam Smith" },
-    { thumbnailPath: "/charli_xcx.webp", subtitle: "Artist", title: "Charli xcx" },
+    { thumbnailPath: "/artists/bad_bunny.jpeg", subtitle: "Artist", title: "Bad bunny" },
+    { thumbnailPath: "/artists/karol_g.jpg", subtitle: "Artist", title: "Karol G" },
+    { thumbnailPath: "/artists/rauw.jpeg", subtitle: "Artist", title: "Rauw Alejandro" },
+    { thumbnailPath: "/artists/harry.jpeg", subtitle: "Artist", title: "Zayn Malik" },
+    { thumbnailPath: "/artists/daddy.jpg", subtitle: "Artist", title: "Daddy Yankee" },
+    { thumbnailPath: "/artists/jennifer.jpeg", subtitle: "Artist", title: "Jennifer Lopez" },
+    { thumbnailPath: "/artists/george_michael.jpg", subtitle: "Artist", title: "George Michael" },
+    { thumbnailPath: "/artists/sam_smith.jpeg", subtitle: "Artist", title: "Sam Smith" },
+    { thumbnailPath: "/artists/charli_xcx.webp", subtitle: "Artist", title: "Charli xcx" },
+    { thumbnailPath: "/artists/zayn.jpeg", subtitle: "Artist", title: "Zayn" },
+
   ];
   return (
     <div className={styles.rightSectionComponent}>
